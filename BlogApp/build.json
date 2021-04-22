@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "./blogapp.keystore",
+            "storePassword": "35633563",
+            "alias": "blogapp",
+            "password" : "35633563",
+            "keystoreType": "jks"
+        },
+        "release": {
+            "keystore": "./blogapp.keystore",
+            "storePassword": "35633563",
+            "alias": "blogapp",
+            "password" : "35633563",
+            "keystoreType": "jks"
+        }
+    }
+}
