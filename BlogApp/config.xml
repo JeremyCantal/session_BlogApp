@@ -7,7 +7,7 @@
     <author email="jeremy.cantal@gmail.com" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="login.html" />
+    <content src="home.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
