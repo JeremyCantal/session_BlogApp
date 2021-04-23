@@ -124,20 +124,14 @@ h1 {
 
 .blockLeft1{
     float: left;
-    width: 25%;
-    height: auto;
     text-align: center;
 }
 .blockRight1{
     float: right;
-    width: 25%;
-    height: auto;
     text-align: center;
 }
 .blockCenter1{
-    margin: 0 auto;
-    width: 25%;
-    height: auto;
     text-align: center;
+
 }
 
