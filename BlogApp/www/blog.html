@@ -57,6 +57,7 @@
             </div>
             <div id="articleDetailsPanel">
                 <h6 id="libelle" style="margin-left:22%; z-index: 900; position: fixed; top:45px; border-radius: 5px; background-color:rgb(138, 93, 189); color:white; width: 50%; padding-bottom:10px; padding-top:10px;"></h6>
+                <button id="backToSearchButton" style=" position: fixed; margin-left: 33%; margin-top: -40px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: black; color: white;">Retour</button>
                 <input type="hidden" id='id'>
 
                 <p id="description1" style="background-color: #424242; color: white; border-top-left-radius: 4px; border-top-right-radius: 4px; margin:0; margin-top:23px; padding-top: 5px; padding-bottom: 5px;"></p>
@@ -74,9 +75,7 @@
                         <img id="urlPhotoDetail3" style="width:80%; height:50%; margin-top: 23%; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>
                     </a>
                 </div>                
-            <div>
-                    <button id="backToSearchButton">Retour</button>
-                </div>
+                
             </div>
         </div>
 
@@ -140,7 +139,7 @@
                
                  showArticleList: function () {
                     $.ajax({
-                        url: "http://10.0.2.2:5557/articles/",
+                        url: "http://localhost:5557/articles/", // Pour Android =>  url: "http://10.0.2.2:5557/articles/",
                         type: "GET",
                         cache: false,
                         dataType : 'json',
@@ -154,7 +153,7 @@
                                     .append('<p style="background-color: #424242; color: white; border-top-left-radius: 4px; border-top-right-radius: 4px; margin:0; padding-top: 5px; padding-bottom: 5px;">' + article.libelle + ' : ' + article.description1 + '</p>')
                                     // .append('<img src=' + article.urlPhotoPr + ' style="width:100%; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>')
                                     .attr('value', article.id).appendTo($('#articleList'))
-                                    .append("<button onclick=\"articleManager.showArticleDetails(\'" + article.id + "\');\" ><img src=" + article.urlPhotoPr + " style='width:100%; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;'></img></button><hr>");
+                                    .append("<button onclick=\"articleManager.showArticleDetails(\'" + article.id + "\');\" ><img src=" + article.urlPhotoPr + " style='width:100%; border-radius: 6px; padding-top: 3px; padding-bottom: 3px;'></img></button><hr>");
                                     // .append("<button onclick=\"articleManager.showArticleDetails(\'" + article.id + "\');\" >Détail</button><hr>");
                                 
                             });
@@ -166,7 +165,7 @@
                     if(id == null) return;
                     $('#articleSearchPanel').hide();
                     $.ajax({
-                        url: "http://10.0.2.2:5557/articles/" + id,
+                        url: "http://localhost:5557/articles/" + id,
                         type: "GET",
                         cache: false,
                         dataType : 'json',
