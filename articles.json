@@ -16,9 +16,9 @@
       "description1": "La nébuleuse d'Orion est l'un des objets célestes les plus faciles à observer",
       "description2": "C'est la nébuleuse la plus intense visible à l'œil nu depuis l'hémisphère nord, de nuit et en l'absence de pollution lumineuse. Elle peut être facilement aperçue avec des jumelles. Sa structure occupe un pan de ciel de 66 × 60 minutes d'arc, quatre fois plus étendu que la pleine lune. Sa taille est d'environ 24 années-lumière. Cet objet correspond à la principale partie d'un nuage de gaz et de poussières beaucoup plus vaste encore, le nuage d'Orion, qui s'étend sur près de la moitié de la constellation",
       "urlPhotoPr": "img/nebuleuse2.jpg",
-      "urlPhotoDetail1": "img/img2.jpg",
-      "urlPhotoDetail2": "img/img3.jpg",
-      "urlPhotoDetail3": "img/img4.jpg"
+      "urlPhotoDetail1": "img/orion1.jpg",
+      "urlPhotoDetail2": "img/orion2.jfif",
+      "urlPhotoDetail3": "img/orion3.jpg"
     },
     {
       "id": 3,
@@ -26,9 +26,9 @@
       "description1": "Découverte de la plus grande exoplanète potentiellement habitable",
       "description2": "Cette exoplanète circumbinaire gazeuse de la taille de Jupiter, baptisée Kepler-1647b, a également la plus grande orbite pour ce type de planète, tournant autour de ces deux étoiles en 1.107 jours ou un peu plus de trois années terrestres. Il s’agit de la onzième exoplanète circumbinaire découverte depuis 2005. Ces planètes sont parfois appelées « Tatooines » en référence à la saga de la Guerre des étoiles et la planète désertique où grandit Luke Skywalker. Kepler-1647b est vieille de 4,4 milliards d’années environ comme la Terre et se situe dans la constellation du Cygne à 3.700 années lumière.",
       "urlPhotoPr": "img/planete1.jpg",
-      "urlPhotoDetail1": "img/img2.jpg",
-      "urlPhotoDetail2": "img/img3.jpg",
-      "urlPhotoDetail3": "img/img4.jpg"
+      "urlPhotoDetail1": "img/kepler1.jpg",
+      "urlPhotoDetail2": "img/kepler2.jpg",
+      "urlPhotoDetail3": "img/kepler3.png"
     },
     {
       "id": 4,
@@ -36,9 +36,9 @@
       "description1": "Les premiers séismes jamais détectés",
       "description2": "La mission InSight de la NASA a été envoyée vers Mars pour résoudre l’énigme de ses profondeurs, avec un atout principal, un sismomètre ultrasensible et ultrarésistant d’origine française, SEIS. Après un atterrissage en fanfare le 26 novembre 2018, puis la dépose et l’installation du sismomètre au niveau du sol poussiéreux de la plaine d’Elysium entre décembre et février 2019, l’instrument s’est mis à l’écoute de l’activité sismique martienne. Une année plus tard, les premiers résultats, publiés dans Nature, sont aussi spectaculaires qu’inattendus.",
       "urlPhotoPr": "img/planete2.jpg",
-      "urlPhotoDetail1": "img/img2.jpg",
-      "urlPhotoDetail2": "img/img3.jpg",
-      "urlPhotoDetail3": "img/img4.jpg"
+      "urlPhotoDetail1": "img/mars1.jpg",
+      "urlPhotoDetail2": "img/mars2.jpeg",
+      "urlPhotoDetail3": "img/mars3.jpg"
     },
     {
       "id": 5,
@@ -46,9 +46,9 @@
       "description1": "La 'Tâche' de jupiter pourrait avaler la Terre",
       "description2": "La Grande Tache rouge est un gigantesque anticyclone de l'atmosphère de Jupiter situé à 22 ° sud de latitude. Longue d'environ 15 000 kilomètres et large de près de 12 000 kilomètres, elle est actuellement un peu plus grosse que la Terre(12742 km), même si elle a atteint des dimensions bien supérieures par le passé.",
       "urlPhotoPr": "img/planete3.jpeg",
-      "urlPhotoDetail1": "img/img2.jpg",
-      "urlPhotoDetail2": "img/img3.jpg",
-      "urlPhotoDetail3": "img/img4.jpg"
+      "urlPhotoDetail1": "img/jupiter1.jpg",
+      "urlPhotoDetail2": "img/jupiter2.jpeg",
+      "urlPhotoDetail3": "img/jupiter3.jfif"
     },
     {
       "id": 6,
@@ -56,9 +56,9 @@
       "description1": "Une neuvième planète pourrait bien se cacher à l'extrémité du système solaire",
       "description2": "Les curieuses orbites d’astres gelés lointains trahissent la présence de cette planète, loin derrière Pluton. Décrite dans la revue Astronomical Journal, la signature gravitationnelle d’une grande planète cachée est inscrite dans les orbites inhabituelles de ces astres lointains. Connus sous le nom d’objets de l’extrême ceinture de Kuiper, ces corps au comportement chaotique tracent d’étranges cercles autour du soleil qui constituent depuis des années un véritable mystère pour les scientifiques.",
       "urlPhotoPr": "img/planete4.jpg",
-      "urlPhotoDetail1": "img/img2.jpg",
-      "urlPhotoDetail2": "img/img3.jpg",
-      "urlPhotoDetail3": "img/img4.jpg"
+      "urlPhotoDetail1": "img/nine1.jpg",
+      "urlPhotoDetail2": "img/nine2.jpg",
+      "urlPhotoDetail3": "img/nine3.jpg"
     },
     {
       "id": 7,
@@ -66,9 +66,9 @@
       "description1": "Le plus petit trou noir connu vient d'être découvert et il est proche de nous",
       "description2": "Des astronomes de l’université d’État de l’Ohio (États-Unis) ont découvert, grâce aux distorsions qu’il provoque sur une étoile géante rouge, un trou noir de seulement trois masses solaires. Probablement l’un des plus proches de notre Terre jamais « observée ». Il se trouve dans la Voie lactée, à seulement 1.500 années-lumière de nous. En appliquant cette méthode de recherche, ils espèrent en trouver beaucoup d'autres à l'avenir.",
       "urlPhotoPr": "img/trouNoir.jpg",
-      "urlPhotoDetail1": "img/img2.jpg",
-      "urlPhotoDetail2": "img/img3.jpg",
-      "urlPhotoDetail3": "img/img4.jpg"
+      "urlPhotoDetail1": "img/trouNoir1.jpg",
+      "urlPhotoDetail2": "img/trouNoir2.jpg",
+      "urlPhotoDetail3": "img/trouNoir3.jpg"
     },
     {
       "id": 8,
@@ -76,9 +76,9 @@
       "description1": "Hubble fige plus de 10.000 galaxies sur une seule image !",
       "description2": "L'idée de ces images composites est de montrer toutes les galaxies peuplant une partie du ciel observée. Dans cette fenêtre ouverte sur une minuscule portion de la constellation australe du Fourneau, il y a très peu d'étoiles comme vous pouvez le constater. Tout ce que vous voyez, ce sont des galaxies. Des milliers et des milliers de galaxies. Certaines, les plus proches, laissent voir leurs structures, tandis que les plus lointaines, qui sont aussi des galaxies jeunes dans un univers alors encore jeune, ne sont que des tâches microscopiques indiscernables. Ces dernières sont à plus de 10 milliards d'années-lumière ! Cela veut dire que nous les voyons telles qu'elles étaient il y a plus de 10 milliards d'années.",
       "urlPhotoPr": "img/galaxies.jpg",
-      "urlPhotoDetail1": "img/img2.jpg",
-      "urlPhotoDetail2": "img/img3.jpg",
-      "urlPhotoDetail3": "img/img4.jpg"
+      "urlPhotoDetail1": "img/galaxies1.jpg",
+      "urlPhotoDetail2": "img/galaxies2.jpg",
+      "urlPhotoDetail3": "img/galaxies3.jpg"
     }
   ]
 }
