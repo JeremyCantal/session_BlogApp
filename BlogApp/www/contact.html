@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" >
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <!-- <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/> -->
+        
+        <title>Hello World</title>
+        
+    </head>
+
+    <body id="deviceready">
+
+        <!--------------------------- DEBUT NAV ---------------------------->
+
+        <nav style=" width: 100%; position:fixed; top:0;">
+            <div class="nav-wrapper" style="background-color:rgba(0, 0, 0, .8);">
+                <a href="#!" class="brand-logo"><h6>Jérémy CANTAL</h6></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="information.html">Plus d'infos</a></li>
+                </ul>
+            </div>
+        </nav>        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="information.html">Plus d'infos</a></li>
+        </ul>
+
+        <!--------------------------- FIN NAV ----------------------------->
+        <div class="container">
+            <h3>Formulaire de contact</h3>
+            <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+            <table class="form-style">
+                <tr>
+                    <td>
+                        <label>
+                        Votre nom <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" class="long"/>
+                        <span class="error" id="errorname"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                        Votre adresse e-mail <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" class="long"/>
+                        <span class="error" id="erroremail"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                        Message <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <textarea name="message" class="long field-textarea"></textarea>
+                        <span class="error" id="errormsg"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Envoyer" onclick="submitButton()">      
+                        <input type="reset" value="Réinitialiser"> 
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--------------------------- DEBUT FOOTER ---------------------------->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">Link 1</a>&nbsp;
+                                <a class="grey-text text-lighten-3" href="#!">Link 2</a>&nbsp;
+                                <a class="grey-text text-lighten-3" href="#!">Link 3</a>&nbsp;
+                                <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2021 Copyright JC-Company
+                    <a class="grey-text text-lighten-4 right" href="#!">Plus de liens</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--------------------------- FIN FOOTER ---------------------------->
+
+
+        <!--------------------------- DEBUT SCRIPT -------------------------->
+
+        <script src="cordova.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/materialize.min.js"></script>
+
+        <!-- <script type="text/javascript">
+            document.addEventListener("deviceready", function() {
+                var deviceinfo = "cordova:" + device.cordova + "<br>Model:" + device.model + "<br>UUID:" + device.uuid + "<br>Platform:" + device.platform + "(" + device.version + ")";
+                document.getElementById("deviceInfoText").innerHTML = deviceinfo;
+            }, false);
+        </script> -->
+
+        <!--------------------------- FIN SCRIPT ---------------------------->
+
+    </body>
+</html>

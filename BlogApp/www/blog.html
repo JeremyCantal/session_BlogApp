@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" >
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <!-- <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/> -->
+        
+        <title>Hello World</title>
+        
+    </head>
+
+    <body id="deviceready">
+
+        <!--------------------------- DEBUT NAV ---------------------------->
+
+        <nav style=" width: 100%; position:fixed; top:0;">
+            <div class="nav-wrapper" style="background-color:rgba(0, 0, 0, .8);">
+                <a href="#!" class="brand-logo"><h6>Jérémy CANTAL</h6></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="information.html">Plus d'infos</a></li>
+                </ul>
+            </div>
+        </nav>        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="information.html">Plus d'infos</a></li>
+        </ul>
+
+        <!--------------------------- FIN NAV ----------------------------->
+
+        <div class="container" style="width: 100%; margin-bottom: 10px; text-align: center;">
+            <h4>Blog</h4>
+            <br>
+            <div id="articleSearchPanel">
+                <h4>Articles</h4>
+                <button id="findButton">Afficher</button>
+                <br><br>
+                <div id="articleListPanel">
+                    <ul id="articleList"></ul>
+
+                </div>
+            </div>
+            <div id="articleDetailsPanel">
+                <h6 id="libelle" style="margin-left:22%; position: fixed; top:45px; border-radius: 5px; background-color:rgb(138, 93, 189); color:white; width: 50%; padding-bottom:10px; padding-top:10px;"></h6>
+                <input type="hidden" id='id'>
+
+                <p id="description1" style="background-color: #424242; color: white; border-top-left-radius: 4px; border-top-right-radius: 4px; margin:0; margin-top:23px; padding-top: 5px; padding-bottom: 5px;"></p>
+                <img id="urlPhotoPr" style="width:100%; bottom:0 auto; "></img>
+                <p id="description2" style="text-transform: none; padding-left:5px; padding-right:5px; background-color: #757575; color: white; margin:0; padding-top: 5px; padding-bottom: 5px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;"></p>
+
+                <div class="carousel carousel-slider" style=" margin: 0 auto; background-color: #bdbdbd; margin-bottom: 5px;">
+                    <a class="carousel-item" style="top:10px;" href="#one!">
+                        <img id="urlPhotoDetail1" style="width:80%; height:50%; margin-top: 23%; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>
+                    </a>
+                    <a class="carousel-item" style="top:10px;" href="#two!">
+                        <img id="urlPhotoDetail2" style="width:80%; height:50%; margin-top: 23%; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>
+                    </a>
+                    <a class="carousel-item" style="top:10px;" href="#three!">
+                        <img id="urlPhotoDetail3" style="width:80%; height:50%; margin-top: 23%; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>
+                    </a>
+                </div>                
+            <div>
+                    <button id="backToSearchButton">Retour</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--------------------------- DEBUT FOOTER ---------------------------->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">Link 1</a>&nbsp;
+                                <a class="grey-text text-lighten-3" href="#!">Link 2</a>&nbsp;
+                                <a class="grey-text text-lighten-3" href="#!">Link 3</a>&nbsp;
+                                <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2021 Copyright JC-Company
+                    <a class="grey-text text-lighten-4 right" href="#!">Plus de liens</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--------------------------- FIN FOOTER ---------------------------->
+
+
+        <!--------------------------- DEBUT SCRIPT -------------------------->
+
+        <script src="cordova.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/materialize.min.js"></script>
+
+        <script>
+
+            var articleManager = {
+    
+               
+                 showArticleList: function () {
+                    $.ajax({
+                        url: "http://10.0.2.2:5557/articles/",
+                        type: "GET",
+                        cache: false,
+                        dataType : 'json',
+                        success: function (data) {
+                            console.log(data);
+                            $('#articleList li').remove();
+                            $('#urlPhotoPr img').remove();
+                            $.each(data, function (index, article) {
+                                
+                                $('<li>')
+                                    .append('<p style="background-color: #424242; color: white; border-top-left-radius: 4px; border-top-right-radius: 4px; margin:0; padding-top: 5px; padding-bottom: 5px;">' + article.libelle + ' : ' + article.description1 + '</p>')
+                                    .append('<img src=' + article.urlPhotoPr + ' style="width:100%; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>')
+                                    .attr('value', article.id).appendTo($('#articleList'))
+                                    .append("&nbsp;&nbsp;&nbsp;<button onclick=\"articleManager.showArticleDetails(\'" + article.id + "\');\" >Détail</button><hr>");
+                                
+                            });
+                            $('#articleListPanel').show();
+                        }
+                    });
+                },
+                showArticleDetails: function (id) { 
+                    if(id == null) return;
+                    $('#articleSearchPanel').hide();
+                    $.ajax({
+                        url: "http://10.0.2.2:5557/articles/" + id, // La ressource ciblée, pour Android utiliser http://10.0.2.2:5556/personnes/
+                        type: "GET", // Le type de la requête HTTP,
+                        cache: false, // n'enregistre pas temporairement des copies de données
+                        dataType : 'json', //  Le type de données à recevoir, ici, du json
+                        success: function (article) {
+                            console.log(article);
+                            $('#articleDetailsPanel').show();
+                            $('#id').attr('value', article.id);
+                            $('#libelle').text(article.libelle).focus();
+                            $('#description1').text(article.description1);
+                            $('#urlPhotoPr').attr('src', article.urlPhotoPr);
+                            $('#description2').text(article.description2);
+                            $('#urlPhotoDetail1').attr('src', article.urlPhotoDetail1);
+                            $('#urlPhotoDetail2').attr('src', article.urlPhotoDetail2);
+                            $('#urlPhotoDetail3').attr('src', article.urlPhotoDetail3);
+                        }
+                    });
+    
+                },
+    
+                backToSearch: function(){
+                    $('#articleDetailsPanel').hide();
+                    $('#articleSearchPanel').show();
+                    $('#articleList').focus();
+                },
+
+                refreshSearch : function() {
+                    this.backToSearch();
+                    this.showArticleList();
+                },
+            }
+    
+            $(document).ready(function () {
+    
+    
+                $('#articleListPanel, #articleDetailsPanel').hide();
+    
+                $('#findButton').click(function (e) {
+                    e.preventDefault();
+                    articleManager.showArticleList();
+                })
+    
+                $('#backToSearchButton').click(function (e) {
+                    e.preventDefault();
+                    articleManager.backToSearch();
+                })    
+            })
+    
+        </script>
+
+        <!-- <script type="text/javascript">
+            document.addEventListener("deviceready", function() {
+                var deviceinfo = "cordova:" + device.cordova + "<br>Model:" + device.model + "<br>UUID:" + device.uuid + "<br>Platform:" + device.platform + "(" + device.version + ")";
+                document.getElementById("deviceInfoText").innerHTML = deviceinfo;
+            }, false);
+        </script> -->
+
+        <!--------------------------- FIN SCRIPT ---------------------------->
+
+    </body>
+</html>
