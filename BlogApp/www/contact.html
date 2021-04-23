@@ -23,7 +23,7 @@
 
         <!--------------------------- DEBUT NAV ---------------------------->
 
-        <nav style=" width: 100%; position:fixed; top:0;">
+        <nav style=" width: 100%; position:fixed; top:0; margin-bottom:30px;">
             <div class="nav-wrapper" style="background-color:rgba(0, 0, 0, .8);">
                 <a href="#!" class="brand-logo"><h6>Jérémy CANTAL</h6></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
@@ -41,10 +41,11 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="information.html">Plus d'infos</a></li>
         </ul>
+        <br><br><br><br><br><br>
 
         <!--------------------------- FIN NAV ----------------------------->
-        <div class="container">
-            <h3>Formulaire de contact</h3>
+        <div class="container"style="top: 50px;border-top-left-radius: 5px; border-top-right-radius: 5px; margin: 0 auto; margin-left:5%; text-align:center; background-color: #bdbdbd;">
+            <h5>Formulaire de contact</h5>
             <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
             <table class="form-style">
                 <tr>
@@ -54,7 +55,7 @@
                         </label>
                     </td>
                     <td>
-                        <input type="text" name="name" class="long"/>
+                        <input type="text" name="name" class="long" style="border-radius: 5px; background-color: #f5f5f5;"/>
                         <span class="error" id="errorname"></span>
                     </td>
                 </tr>
@@ -65,7 +66,7 @@
                         </label>
                     </td>
                     <td>
-                        <input type="email" name="email" class="long"/>
+                        <input type="email" name="email" class="long" style="border-radius: 5px; background-color: #f5f5f5;"/>
                         <span class="error" id="erroremail"></span>
                     </td>
                 </tr>
@@ -76,15 +77,15 @@
                         </label>
                     </td>
                     <td>
-                        <textarea name="message" class="long field-textarea"></textarea>
+                        <textarea name="message" class="long field-textarea" style="border-radius: 5px; background-color: #f5f5f5;"></textarea>
                         <span class="error" id="errormsg"></span>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="submit" value="Envoyer" onclick="submitButton()">      
-                        <input type="reset" value="Réinitialiser"> 
+                        <input style="border-radius: 5px; margin-left: 12%;" type="submit" value="Envoyer" onclick="submitButton()">      
+                        <input style="border-radius: 5px; margin-left: 12%;" type="reset" value="Réinitialiser"> 
                     </td>
                 </tr>
             </table>
@@ -103,7 +104,7 @@
 
 
         <!--------------------------- DEBUT FOOTER ---------------------------->
-        <footer class="page-footer">
+        <footer class="page-footer" style="margin-top : 110px;">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
