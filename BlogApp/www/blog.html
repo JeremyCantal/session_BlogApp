@@ -22,7 +22,7 @@
 
         <!--------------------------- DEBUT NAV ---------------------------->
 
-        <nav style=" width: 100%; position:fixed; top:0;">
+        <nav style=" z-index: 1000; width: 100%; position:fixed; top:0;">
             <div class="nav-wrapper" style="background-color:rgba(0, 0, 0, .8);">
                 <a href="#!" class="brand-logo"><h6>Jérémy CANTAL</h6></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
@@ -56,7 +56,8 @@
                 </div>
             </div>
             <div id="articleDetailsPanel">
-                <h6 id="libelle" style="margin-left:22%; position: fixed; top:45px; border-radius: 5px; background-color:rgb(138, 93, 189); color:white; width: 50%; padding-bottom:10px; padding-top:10px;"></h6>
+                <h6 id="libelle" style="margin-left:22%; z-index: 900; position: fixed; top:45px; border-radius: 5px; background-color:rgb(138, 93, 189); color:white; width: 50%; padding-bottom:10px; padding-top:10px;"></h6>
+                <button id="backToSearchButton" style=" position: fixed; margin-left: 33%; margin-top: -40px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: black; color: white;">Retour</button>
                 <input type="hidden" id='id'>
 
                 <p id="description1" style="background-color: #424242; color: white; border-top-left-radius: 4px; border-top-right-radius: 4px; margin:0; margin-top:23px; padding-top: 5px; padding-bottom: 5px;"></p>
@@ -74,9 +75,7 @@
                         <img id="urlPhotoDetail3" style="width:80%; height:50%; margin-top: 23%; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>
                     </a>
                 </div>                
-            <div>
-                    <button id="backToSearchButton">Retour</button>
-                </div>
+                
             </div>
         </div>
 
@@ -140,7 +139,7 @@
                
                  showArticleList: function () {
                     $.ajax({
-                        url: "http://10.0.2.2:5557/articles/",
+                        url: "http://localhost:5557/articles/", // Pour Android =>  url: "http://10.0.2.2:5557/articles/",
                         type: "GET",
                         cache: false,
                         dataType : 'json',
@@ -152,9 +151,10 @@
                                 
                                 $('<li>')
                                     .append('<p style="background-color: #424242; color: white; border-top-left-radius: 4px; border-top-right-radius: 4px; margin:0; padding-top: 5px; padding-bottom: 5px;">' + article.libelle + ' : ' + article.description1 + '</p>')
-                                    .append('<img src=' + article.urlPhotoPr + ' style="width:100%; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>')
+                                    // .append('<img src=' + article.urlPhotoPr + ' style="width:100%; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"></img>')
                                     .attr('value', article.id).appendTo($('#articleList'))
-                                    .append("&nbsp;&nbsp;&nbsp;<button onclick=\"articleManager.showArticleDetails(\'" + article.id + "\');\" >Détail</button><hr>");
+                                    .append("<button onclick=\"articleManager.showArticleDetails(\'" + article.id + "\');\" ><img src=" + article.urlPhotoPr + " style='width:100%; border-radius: 6px; padding-top: 3px; padding-bottom: 3px;'></img></button><hr>");
+                                    // .append("<button onclick=\"articleManager.showArticleDetails(\'" + article.id + "\');\" >Détail</button><hr>");
                                 
                             });
                             $('#articleListPanel').show();
@@ -165,10 +165,10 @@
                     if(id == null) return;
                     $('#articleSearchPanel').hide();
                     $.ajax({
-                        url: "http://10.0.2.2:5557/articles/" + id, // La ressource ciblée, pour Android utiliser http://10.0.2.2:5556/personnes/
-                        type: "GET", // Le type de la requête HTTP,
-                        cache: false, // n'enregistre pas temporairement des copies de données
-                        dataType : 'json', //  Le type de données à recevoir, ici, du json
+                        url: "http://localhost:5557/articles/" + id,
+                        type: "GET",
+                        cache: false,
+                        dataType : 'json',
                         success: function (article) {
                             console.log(article);
                             $('#articleDetailsPanel').show();

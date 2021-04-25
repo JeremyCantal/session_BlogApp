@@ -108,30 +108,3 @@ h1 {
         background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
     }
 }
-
-.blockLeft{
-    float: left;
-    width: 42%;
-    height: auto;
-    text-align: center;
-}
-.blockRight{
-    float: right;
-    width: 42%;
-    height: auto;
-    text-align: center;
-}
-
-.blockLeft1{
-    float: left;
-    text-align: center;
-}
-.blockRight1{
-    float: right;
-    text-align: center;
-}
-.blockCenter1{
-    text-align: center;
-
-}
-
